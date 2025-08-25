@@ -1,16 +1,25 @@
 # gRPC Order Service PoC  
 
-Bu repo, mikroservisler arasında **gerçek zamanlı iletişim** için gRPC’nin nasıl kullanılabileceğini gösteren bir **Proof of Concept (PoC)** uygulamasını içerir.  
+This repository demonstrates how to use **gRPC for real-time communication** between microservices with a simple **Proof of Concept (PoC)** application.  
 
-## 🚀 Özellikler  
-- **Unary RPC**: Tek istek–tek yanıt (PlaceOrder)  
-- **Server Streaming RPC**: Tek istek–çok yanıt (SubscribeOrderStatus)  
-- **Contract-first tip güvenliği**: `.proto` dosyası üzerinden client & server kod üretimi  
-- **Gerçek zamanlı senaryo**: Sipariş oluşturma ve sipariş durumunun canlı takibi  
+## 🚀 Features  
+- **Unary RPC**: Single request – single response (PlaceOrder)  
+- **Server Streaming RPC**: Single request – multiple responses (SubscribeOrderStatus)  
+- **Contract-first type safety**: Client & server code generated from `.proto` file  
+- **Real-time scenario**: Place an order and track its status live  
 
-## 🛠️ Kurulum  
+## 🛠️ Setup  
+After cloning the project, follow these steps:  
+
 ```bash
-git clone https://github.com/kullanici/grpc-order-service.git
+# Clone the repository
+git clone https://github.com/username/grpc-order-service.git
+
+# Navigate into the project folder
 cd grpc-order-service
+
+# Build the project
 dotnet build
+
+# Run the project
 dotnet run
