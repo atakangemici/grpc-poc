@@ -16,7 +16,7 @@ After cloning the project, follow these steps:
 git clone https://github.com/username/grpc-order-service.git
 
 # Navigate into the project folder
-cd grpc-order-service
+cd grpc-poc
 
 # Build the project
 dotnet build
