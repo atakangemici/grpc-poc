@@ -1,0 +1,30 @@
+syntax = "proto3";
+option csharp_namespace = "OrderProto";
+
+package orders;
+
+message PlaceOrderRequest {
+  string customer_id = 1;
+  string sku         = 2;
+  int32  quantity    = 3;
+}
+
+message PlaceOrderReply {
+  string order_id = 1;
+  string status   = 2;
+}
+
+message OrderStatusRequest {
+  string order_id = 1;
+}
+
+message OrderStatusUpdate {
+  string order_id = 1;
+  string stage    = 2; 
+  int32  progress = 3; 
+}
+
+service OrderService {
+  rpc PlaceOrder (PlaceOrderRequest) returns (PlaceOrderReply);              
+  rpc SubscribeOrderStatus (OrderStatusRequest) returns (stream OrderStatusUpdate);
+}
