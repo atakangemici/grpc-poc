@@ -1,4 +1,4 @@
-# gRPC Order Service PoC  
+# gRPC PoC  
 
 This repository demonstrates how to use **gRPC for real-time communication** between microservices with a simple **Proof of Concept (PoC)** application.  
 
