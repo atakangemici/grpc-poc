@@ -13,7 +13,7 @@ After cloning the project, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/grpc-order-service.git
+git clone https://github.com/atakangemici/grpc-poc.git
 
 # Navigate into the project folder
 cd grpc-poc
