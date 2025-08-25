@@ -2,13 +2,13 @@
 
 This repository demonstrates how to use **gRPC for real-time communication** between microservices with a simple **Proof of Concept (PoC)** application.  
 
-## 🚀 Features  
+## Features  
 - **Unary RPC**: Single request – single response (PlaceOrder)  
 - **Server Streaming RPC**: Single request – multiple responses (SubscribeOrderStatus)  
 - **Contract-first type safety**: Client & server code generated from `.proto` file  
 - **Real-time scenario**: Place an order and track its status live  
 
-## 🛠️ Setup  
+## Setup  
 After cloning the project, follow these steps:  
 
 ```bash
